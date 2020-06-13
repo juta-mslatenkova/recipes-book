@@ -11,7 +11,7 @@ import { RecipeListComponent } from './recipe-book/recipe-list/recipe-list.compo
 import { RecipeItemComponent } from './recipe-book/recipe-item/recipe-item.component';
 import { RecipeDetailComponent } from './recipe-book/recipe-detail/recipe-detail.component';
 import { RecipeComponent } from './recipe-book/recipe/recipe.component';
-import { MatToolbarModule, MatMenuModule, MatIconModule } from '@angular/material';
+import { MatToolbarModule, MatIconModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; 
 
@@ -32,7 +32,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     MatToolbarModule,
     BrowserAnimationsModule,
-    MatMenuModule,
     MatIconModule,
     NgbModule
   ],
