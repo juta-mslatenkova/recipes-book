@@ -1,0 +1,20 @@
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar-header {
+    background-color: lightgray;
+    box-shadow: grey 5px 2px 5px 0px;
+    margin-bottom: 15px;
+    padding: 0px 80px 15px 80px
+}
+
+.filler {
+    flex: 1 1 auto;
+ }
+
+ .gap {
+    margin-left: 30px;
+    padding: 15px 0px 0px 0px;
+    font-size: 14px;
+}
