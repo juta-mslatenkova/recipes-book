@@ -6,7 +6,8 @@ h3 {
     background-color: lightgray;
     box-shadow: grey 5px 2px 5px 0px;
     margin-bottom: 15px;
-    padding: 0px 80px 15px 80px
+    padding: 0px 80px 15px 80px;
+    color: black;
 }
 
 .filler {

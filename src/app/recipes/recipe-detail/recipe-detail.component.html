@@ -1,0 +1,17 @@
+<div class="row">
+    <h2>Recipe  Title</h2>
+    <!-- <button  class="button">Manage recipes</button> -->
+
+    <div ngbDropdown>
+        <button mat-button class="button" id="dropdownConfig" ngbDropdownToggle>Manage recipes
+            <span class="caret"></span>
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+            <button ngbDropdownItem>To shopping list</button>
+            <button ngbDropdownItem>Edit recipe</button>
+            <button ngbDropdownItem>Delete recipe</button>
+        </div>
+    </div>
+    <p>Description</p>
+    <p>Ingredients</p>
+</div>
