@@ -1,7 +1,16 @@
 <div class="row">
     <div class="col-xs-10">
-        <app-shopping-list-edit></app-shopping-list-edit>
-    <hr>
-    <p>The list</p>
+        <app-shopping-list-edit></app-shopping-list-edit></div>
+    <div class="col-xs-5">
+        <p>The ingredient list</p>
+        <div class="list-group-item clearfix"
+            *ngFor="let ingredient of ingredients">
+            <span class="pull-left">
+                <p>{{ ingredient.name }}</p>
+            </span>
+            <span class="pull-right">
+                <p>{{ ingredient.amount }}</p>
+            </span>
+        </div>
     </div>
 </div>

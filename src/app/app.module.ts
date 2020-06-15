@@ -12,7 +12,7 @@ import { RecipeItemComponent } from './recipes/recipe-item/recipe-item.component
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { MatToolbarModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RecipesComponent } from './recipes/recipes/recipes.component'; 
 
 @NgModule({
