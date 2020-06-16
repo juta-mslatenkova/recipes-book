@@ -1,22 +1,22 @@
-<div class="col-md-7">
-<div class="row">
-    <button mat-button class="button">
-        <mat-icon>library_add</mat-icon>
-        <p class="pull-right">Add new recipe</p>
-    </button>
+<div class="col-xs-10">
     <div class="row">
-        <div class="list-group-item clearfix"
-        *ngFor="let recipe of recipes">
-            <div class="pull-left">
-                <h4>{{ recipe.title }}</h4>
-                <p>{{ recipe.content  }}</p>
+        <button mat-button class="button">
+            <mat-icon>library_add</mat-icon>
+            <p class="pull-right">Add new recipe</p>
+        </button>
+        <div class="row">
+            <div class="list-group-item clearfix"
+            *ngFor="let recipe of recipes">
+                <div class="pull-left">
+                    <h4>{{ recipe.title }}</h4>
+                    <p>{{ recipe.content  }}</p>
+                </div>
+                <span class="pull-right">
+                    <img src="{{ recipe.imagePath }}"
+                        alt="{{ recipe.title }}"
+                        class="img-responsive" style="max-height: 50px;">
+                </span>
             </div>
-            <span class="pull-right">
-                <img src="{{ recipe.imagePath }}"
-                    alt="{{ recipe.title }}"
-                    class="img-responsive" style="max-height: 50px;">
-            </span>
         </div>
     </div>
-</div>
 </div>
