@@ -14,6 +14,7 @@ import { MatToolbarModule, MatIconModule, MatButtonModule } from '@angular/mater
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RecipesComponent } from './recipes/recipes/recipes.component'; 
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { RecipesComponent } from './recipes/recipes/recipes.component';
     BrowserAnimationsModule,
     MatIconModule,
     NgbModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
