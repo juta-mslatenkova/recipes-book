@@ -5,14 +5,18 @@
             alt="{{ recipe.title }}"
             class="img-responsive" style="max-height: 220px;">
     </div>
-    <div ngbDropdown>
-        <button mat-button class="button" id="dropdownConfig" ngbDropdownToggle>Manage recipes
-            <span class="caret"></span>
-        </button>
-        <div ngbDropdownMenu aria-labelledby="dropdownConfig">
-            <button ngbDropdownItem>To shopping list</button>
-            <button ngbDropdownItem>Edit recipe</button>
-            <button ngbDropdownItem>Delete recipe</button>
+    <div row>
+        <div class="btn-group"
+            appDropdown>
+            <button mat-button class="button dropdown-toggle">
+                Manage recipes
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" ngbDropdownItem>To shopping list</a></li>
+                <li><a href="#" ngbDropdownItem>Edit recipe</a></li>
+                <li><a href="#" ngbDropdownItem>Delete recipe</a></li>
+            </ul>
         </div>
     </div>
     <div class="row pull-left">  

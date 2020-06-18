@@ -1,17 +1,22 @@
 <mat-toolbar class="navbar-header">
-    <span class="gap"><h3>Recipe Book</h3></span>
-        <a href="#" (click)="onSelect('recipes')" class="gap">Recipes</a>
-        <a href="#" (click)="onSelect('shopping-list')" class="gap">Shopping List</a>
-    <span class = "filler"></span>
+    <span class="gap">
+        <h3>Recipe Book</h3>
+    </span>
+    <a href="#" (click)="onSelect('recipes')" class="gap">Recipes</a>
+    <a href="#" (click)="onSelect('shopping-list')" class="gap">Shopping List</a>
+    <span class="filler"></span>
 
-    <div ngbDropdown>
-        <button class="btn btn-outline-primary" id="dropdownConfig" ngbDropdownToggle>
-            Manage
-            <span class="caret"></span>
-        </button>
-        <div ngbDropdownMenu aria-labelledby="dropdownConfig">
-            <button ngbDropdownItem>Help</button>
-            <button ngbDropdownItem>Another Action</button>
+    <div class="row">
+        <div class="btn-group" 
+        appDropdown>
+            <button class="btn btn-dropdown">
+                Manage
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" ngbDropdownItem>Help</a></li>
+                <li><a href="#" ngbDropdownItem>Another Action</a></li>
+            </ul>
         </div>
     </div>
 
