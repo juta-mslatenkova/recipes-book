@@ -1,4 +1,4 @@
-<div class="col-xs-5">
+<div class="col-xs-">
 <div class="row">
     <div class="row pull-right">
         <img src="{{ recipe.imagePath }}"
@@ -22,6 +22,17 @@
     <div class="row pull-left">  
         <h4>{{ recipe.title }}</h4>
         <div>{{ recipe.content }}</div>
+            <ul class="list-group">
+                <div class="list-group-item clearfix"
+                    *ngFor="let ingredient of recipe.ingredients">
+                    <span class="pull-left">
+                        <p>{{ ingredient.name }}</p>
+                    </span>
+                    <span class="pull-right">
+                        <p>{{ ingredient.amount }}</p>
+                    </span>
+                </div>
+            </ul>        
     </div> 
     
 </div>
