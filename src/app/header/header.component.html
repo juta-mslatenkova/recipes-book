@@ -2,8 +2,8 @@
     <span class="gap">
         <h3>Recipe Book</h3>
     </span>
-    <a href="#" (click)="onSelect('recipes')" class="gap">Recipes</a>
-    <a href="#" (click)="onSelect('shopping-list')" class="gap">Shopping List</a>
+    <a class="active gap" routerLink="/recipes" >Recipes</a>
+    <a routerLink="/shopping-list" class="gap">Shopping List</a>
     <span class="filler"></span>
 
     <div class="row">
@@ -14,8 +14,8 @@
                 <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-                <li><a href="#" ngbDropdownItem>Help</a></li>
-                <li><a href="#" ngbDropdownItem>Another Action</a></li>
+                <li><a style="cursor: pointer;" ngbDropdownItem>Help</a></li>
+                <li><a style="cursor: pointer;" ngbDropdownItem>Another Action</a></li>
             </ul>
         </div>
     </div>
